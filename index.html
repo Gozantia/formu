@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<body>
+<form>
+    <h1 id="title">Formulario de sábado</h1>
+    <p id="head">Cosas que se hacen, cosas que se piensan en el sexto día</p>
+    <div class="form-group">
+      <label id="name-label" for="name">Apodo de infancia:</label>
+      <input
+        type="name"
+        name="nombre"
+        id="name"
+        class="form-control"
+        placeholder="Si no tuviste, tu aburrido nombre"
+        required
+      />
+      </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Correo"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">
+        ¿Cuántas frutas te comiste esta semana?<span class="clue"> ¿Ninguna? No me extraña</span></label>
+      <input
+        type="number"
+        name="frutas"
+        id="number"
+        min="0"
+        max="99"
+        class="form-control"
+        placeholder="En números, la cantidad de fruta que ingeriste"
+        required="pon números entre 0 y 99"
+      />
+    </div>
+    <div class="form-group">
+        <p>
+          ¿Dónde estarías si no hubiera covid 19?
+        </p>
+        <select id="dropdown" name="lugar" class="form-control" required>
+          <option disabled="" selected="" value="">Seleccione un lugar</option>
+          <option value="Aqui">Aquí mismo</option>
+          <option value="costa">En la costa</option>
+          <option value="pueblo">En la discoteca</option>
+          <option value="iglesia">En la iglesia</option>
+        </select>
+      </div>
+
+    <div class="form-group">
+        <p>¿Qué crees que harás mañana?</p>
+        <label>
+          <input
+            name="user-destination"
+            value="lomismo"
+            type="radio"
+            class="input-radio"
+            checked
+          />Lo mismo de hoy</label
+        >
+        <label>
+          <input
+            name="user-destination"
+            value="salir"
+            type="radio"
+            class="input-radio"
+          />Salir a visitar a mi vecina</label
+        >
+  
+        <label
+          ><input
+            name="user-destination"
+            value="compra"
+            type="radio"
+            class="input-radio"
+          />Realizar una compra innecesaria</label
+        >
+      </div>
+      <div class="form-group">
+        <p>
+          ¿Qué canción de Arjona?
+          <span class="clue">(Puedes seleccionar varias)</span>
+        </p>
+        <label>
+            <input
+            name="arjona"
+            value="señora"
+            type="checkbox"
+            class="input-checkbox"/>Señora
+        </label>
+        <label>
+            <input
+            name="arjona"
+            value="Jesus es Verbo"
+            type="checkbox"
+            class="input-checkbox"/>Jesus es Verbo
+        </label>
+        <label>
+            <input
+            name="arjona"
+            value="El problema"
+            type="checkbox"
+            class="input-checkbox"/>El Problema
+        </label>
+
+    </div>
+    <div class="form-group">
+        <p>¿Cómo te sentiste diligenciando este formulario?</p>
+        <textarea
+          id="satisfaccion"
+          class="input-textarea"
+          name="comment"
+          placeholder="Ingresa tu verdad..."
+        ></textarea>
+      </div>
+  
+          <label>
+      <button type="submit" id="submit" class="submit-button">
+        Enviar
+      </button>
+</form>
+
+</body>
+</html>

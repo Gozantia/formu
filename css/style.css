@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-size: 15px;
+    background-image: radial-gradient(circle, rgba(238,174,202,0.2) 0%, rgba(148,187,233,0.9) 100%),
+    url(https://64.media.tumblr.com/422cd5501b0fb26bf1db3186575c0dd5/tumblr_pbv3rsBQpH1snmmclo1_500.gifv);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1 {
+    text-align:center;
+}
+p#head {
+    text-align:center;
+}
+
+form {
+    background: #1502028f;
+    color: #fff;
+    width: 80%;
+    margin: 48px auto;
+    padding: 0.5rem 1.625rem;
+    border-radius: 0.25rem;
+}
+.form-control {
+    display: block;
+    width: 98%;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 18px;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #00BCD4;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+}
+.input-textarea {
+    min-height: 120px;
+    width: 98%;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.75rem;
+}
+.submit-button {
+    display: block;
+    width: 10%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.75rem;
+    background: #E91E63;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background: #6d0f2e;
+}
+.clue {
+    color: #E91E63;
+    font-size: 12px;
+}
